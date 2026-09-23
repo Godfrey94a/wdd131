@@ -1,0 +1,33 @@
+/* ===== Larger view overrides ===== */
+@media screen and (min-width: 700px) {
+
+  header {
+    flex-wrap: nowrap;
+  }
+
+  /* Hide hamburger, show nav inline using flex */
+  #menu-toggle {
+    display: none;
+  }
+
+  nav#primary-nav {
+    display: block;
+    width: auto;
+    order: 2;
+  }
+
+  nav#primary-nav ul {
+    flex-direction: row;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+  }
+
+  /* Responsive grid: repeat with auto-fit/minmax */
+  .temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}

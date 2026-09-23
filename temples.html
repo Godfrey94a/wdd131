@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <meta name="description" content="A responsive picture album of temples, built for WDD131." />
+  <meta name="author" content="Godfrey Pakati" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Mobile-first CSS, then large-view overrides -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="site-title">Temple Album</h1>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      &#9776;
+    </button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Old</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Large</a></li>
+        <li><a href="#">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="temple-grid">
+
+      <figure>
+        <img src="images/salt lake temple.jpg" alt="Salt Lake Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/london england temple.jpg" alt="London England Temple" loading="lazy" width="500" height="400" />
+        <figcaption>London England Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/san diego temple.jpg" alt="San Diego California Temple" loading="lazy" width="500" height="400" />
+        <figcaption>San Diego California Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rome italy temple.jpg" alt="Rome Italy Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/tokyo japan.jpg" alt="Tokyo Japan Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/sydney city mexico temple.jpg" alt="Sydney Australia Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Sydney Australia Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/mexico city temple.jpg" alt="Mexico City Mexico Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Mexico City Mexico Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/accra ghana temple.jpg" alt="Accra Ghana Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/manila philippines temple.jpg" alt="Manila Philippines Temple" loading="lazy" width="500" height="400" />
+        <figcaption>Manila Philippines Temple</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Godfrey Pakati &mdash; Zimbabwe</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
