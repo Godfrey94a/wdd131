@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egypt | Country Page</title>
+  <meta name="description" content="A dynamic web page about Egypt, built for WDD131." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header class="titlebar">
+    <h1>Egypt</h1>
+  </header>
+
+  <main class="layout">
+
+    <img
+      class="hero"
+      src="https://images.unsplash.com/photo-1524686975162-f6fb4d39759c?w=800&fm=webp&q=80&fit=crop"
+      srcset="
+        https://images.unsplash.com/photo-1524686975162-f6fb4d39759c?w=400&fm=webp&q=80&fit=crop 400w,
+        https://images.unsplash.com/photo-1524686975162-f6fb4d39759c?w=800&fm=webp&q=80&fit=crop 800w,
+        https://images.unsplash.com/photo-1524686975162-f6fb4d39759c?w=1400&fm=webp&q=80&fit=crop 1400w"
+      sizes="(min-width: 700px) 45vw, 100vw"
+      alt="The Great Pyramid of Giza rising above the desert sand under a clear sky"
+      width="1400" height="933"
+    />
+
+    <section class="data" aria-labelledby="dataHeading">
+      <h2 id="dataHeading">Data</h2>
+      <dl>
+        <div class="row"><dt>Area</dt><dd>1,010,408 sq km</dd></div>
+        <div class="row"><dt>Population</dt><dd>~112,700,000</dd></div>
+        <div class="row"><dt>Capital</dt><dd>Cairo</dd></div>
+        <div class="row"><dt>Languages</dt><dd>Arabic</dd></div>
+        <div class="row"><dt>Currency</dt><dd>Egyptian Pound (EGP)</dd></div>
+        <div class="row"><dt>Time Zone</dt><dd>UTC+2</dd></div>
+        <div class="row"><dt>Calling Code</dt><dd>+20</dd></div>
+        <div class="row"><dt>Internet TLD</dt><dd>.eg</dd></div>
+      </dl>
+    </section>
+
+    <section class="weather" aria-labelledby="weatherHeading">
+      <h2 id="weatherHeading">Weather</h2>
+      <img class="weather-icon" src="images/weather-icon.svg" alt="Sunny" width="48" height="48" />
+      <dl>
+        <div class="row"><dt>Temperature</dt><dd id="temperature">34 °C</dd></div>
+        <div class="row"><dt>Conditions</dt><dd>Sunny</dd></div>
+        <div class="row"><dt>Wind</dt><dd id="windSpeedDisplay">12 km/h</dd></div>
+        <div class="row"><dt>Wind Chill</dt><dd id="windChill">--</dd></div>
+      </dl>
+      <p class="note">Weather values are static for this assignment; a later course builds this from a live API.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Godfrey Pakati &mdash; Egypt Country Page</p>
+    <p>Last modified: <span id="modified"></span></p>
+  </footer>
+
+</body>
+</html>

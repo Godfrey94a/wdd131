@@ -1,0 +1,137 @@
+:root {
+  --color-red: #ce1126;
+  --color-black: #1a1a1a;
+  --color-white: #fdfaf3;
+  --color-gold: #c9a24b;
+  --color-sand: #f4ede0;
+  --color-text: #2a2a2a;
+
+  --font-heading: "Cinzel", serif;
+  --font-body: "Noto Sans", sans-serif;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
+  --border: 1px solid rgba(26, 26, 26, 0.15);
+  --radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+.titlebar {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-md);
+  border-bottom: 6px solid var(--color-gold);
+}
+
+.titlebar h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-md);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  object-fit: cover;
+}
+
+.data, .weather {
+  background-color: var(--color-sand);
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.data h2, .weather h2 {
+  color: var(--color-red);
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+dl {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed rgba(26, 26, 26, 0.12);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin: 0;
+  text-align: right;
+}
+
+.weather {
+  text-align: center;
+}
+
+.weather .row {
+  text-align: left;
+}
+
+.weather-icon {
+  display: block;
+  margin: 0 auto var(--space-sm);
+}
+
+.note {
+  font-size: 0.8rem;
+  color: rgba(42, 42, 42, 0.65);
+  margin-top: var(--space-md);
+  text-align: left;
+}
+
+.site-footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-md);
+  font-size: 0.85rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}

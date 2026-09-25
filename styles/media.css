@@ -1,0 +1,39 @@
+@media (min-width: 700px) {
+
+  .titlebar h1 {
+    font-size: 2.4rem;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "data hero weather";
+    align-items: start;
+    gap: var(--space-lg);
+  }
+
+  .hero {
+    grid-area: hero;
+    height: 100%;
+    max-height: 480px;
+  }
+
+  .data {
+    grid-area: data;
+  }
+
+  .weather {
+    grid-area: weather;
+  }
+
+  /* Requirement: SVG icon is for the mobile view only; the wide view
+     uses a pseudo-element emoticon placed after the Weather heading. */
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " \1F324";
+    margin-left: 0.4rem;
+  }
+}
