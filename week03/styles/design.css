@@ -1,0 +1,58 @@
+body {
+  font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Replaces the deprecated <marquee> element */
+.banner {
+  padding: 1rem;
+  background-color: #eee;
+}
+
+h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* --- Step 7: two-column layout for main content --- */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* h2 spans both columns */
+main h2 {
+  grid-column: 1 / -1;
+  color: navy;
+  text-align: left; /* was centered; now left-aligned */
+}
+
+/* keep the callout full-width beneath the two columns */
+.callout {
+  grid-column: 1 / -1;
+}
+
+article p {
+  text-align: justify;
+}
+
+/* --- Step 3.2 & 3.6: padding + contrast fix --- */
+.callout {
+  padding: 1.5rem;           /* was missing padding entirely */
+  color: #ffffff;            /* was #777 - failed contrast (2.14) */
+  background-color: #702963; /* #fff on #702963 = ~9.6:1, passes AA and AAA */
+}
+
+/* --- Step 9: move footer content to the left --- */
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: smaller;
+  text-align: left; /* was right */
+}
